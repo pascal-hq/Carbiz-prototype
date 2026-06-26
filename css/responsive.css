@@ -35,3 +35,42 @@
     grid-template-columns:1fr;
 }
 }
+/*==========================================
+TABLETS & PHONES
+==========================================*/
+@media(max-width:900px){
+    .menu-toggle{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        gap:0;
+        display:none;
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+    .nav-links.show{
+        display:flex;
+    }
+    .nav-links li{
+        width:100%;
+    }
+    .nav-links a{
+        display:block;
+        padding:18px 30px;
+        border-bottom:1px solid #eee;
+    }
+}
+/*==========================================
+FOOTER
+==========================================*/
+@media(max-width:900px){
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+}

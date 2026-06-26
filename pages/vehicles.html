@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Vehicles | CarBiz Motors</title>
+    <!-- Google Fonts -->
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
     <link rel="preconnect"
@@ -12,77 +13,93 @@
           crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="../css/style.css">
+    <link rel="stylesheet"
+          href="../css/layout.css">
+    <link rel="stylesheet"
+          href="../css/components.css">
+    <link rel="stylesheet"
+          href="../css/pages.css">
+    <link rel="stylesheet"
+          href="../css/responsive.css">
 </head>
 <body>
     <!-- ===========================
          NAVIGATION
     ============================ -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <h2 class="logo">
-                CarBiz Motors
-            </h2>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="vehicles.html">Vehicles</a></li>
-                <li><a href="sell-your-car.html">Sell Your Car</a></li>
-                <li><a href="logbook-loans.html">Logbook Loans</a></li>
-                <li><a href="car-hire.html">Car Hire</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="navbar"></div>
     <!-- ===========================
          PAGE HEADER
     ============================ -->
     <section class="page-header">
         <div class="container">
             <h1>
-                Vehicles
+                Available Vehicles
             </h1>
-            <div class="breadcrumb">
-                <a href="../index.html">
-                    Home
-                </a>
-                <span>/</span>
-                Vehicles
+            <p>
+                Browse our collection of quality new and used vehicles.
+            </p>
+        </div>
+    </section>
+    <!-- ===========================
+         FILTERS
+    ============================ -->
+    <section class="page-content">
+        <div class="container">
+            <div class="vehicle-filters">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search by make or model...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="MPV">MPV</option>
+                    <option value="4x4">4x4</option>
+                </select>
+                <select id="fuel-filter">
+                    <option value="">All Fuel Types</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                </select>
+                <select id="sort-filter">
+                    <option value="">Sort Vehicles</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="year">Newest First</option>
+                </select>
             </div>
         </div>
     </section>
     <!-- ===========================
-         INVENTORY
+         RESULTS
     ============================ -->
     <section class="page-content">
-    <div class="container">
-        <div class="results-header">
-            <h2>
-                Available Vehicles
-            </h2>
-            <p>
-                Browse our latest inventory.
-            </p>
+        <div class="container">
+            <div class="results-header">
+                <h2 id="vehicle-count">
+                    0 Vehicles Found
+                </h2>
+            </div>
+            <div
+                id="vehicle-grid"
+                class="vehicle-grid">
+            </div>
         </div>
-        <div
-            id="vehicle-grid"
-            class="vehicle-grid">
-        </div>
-    </div>
-</section>
+    </section>
     <!-- ===========================
-         CTA
+         CALL TO ACTION
     ============================ -->
     <section class="cta">
         <div class="container">
             <h2>
-                Can't Find Your Ideal Vehicle?
+                Can't Find the Vehicle You're Looking For?
             </h2>
             <p>
-                Contact our sales team and we'll help you source the perfect vehicle.
+                Contact us today and we'll help you source the perfect vehicle for your needs.
             </p>
             <a href="contact.html"
                class="btn btn-primary">
@@ -93,23 +110,17 @@
     <!-- ===========================
          FOOTER
     ============================ -->
-    <footer class="footer">
-        <div class="container">
-            <h3>
-                CarBiz Motors
-            </h3>
-            <p>
-                Buy • Sell • Finance • Hire
-            </p>
-            <p>
-                © 2026 CarBiz Motors. All Rights Reserved.
-            </p>
-        </div>
-    </footer>
+    <!-- ===========================
+     FOOTER
+=========================== -->
+<div id="footer"></div>
+    <!-- ===========================
+         JAVASCRIPT
+    ============================ -->
     <script src="../js/data/vehicles.js"></script>
-
-<script src="../js/components/vehicleCard.js"></script>
-
-<script src="../js/vehicles.js"></script>
+    <script src="../js/components/vehicleCard.js"></script>
+    <script src="../js/pages/vehicles.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/components/components.js"></script>
 </body>
 </html>

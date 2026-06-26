@@ -1,12 +1,23 @@
 /**
  * ==========================================
- * IMAGE GALLERY
+ * COMPONENT LOADER
  * ==========================================
  */
-document.addEventListener("click", function(event){
-    if(!event.target.classList.contains("gallery-image")){
-        return;
+const isInPages = window.location.pathname.includes("/pages/");
+const basePath = isInPages ? "../components/" : "components/";
+async function loadComponent(id, file) {
+    try {
+        const res = await fetch(file);
+        if (!res.ok) {
+            throw new Error("Failed to load " + file);
+        }
+        const html = await res.text();
+        document.getElementById(id).innerHTML = html;
+    } catch (err) {
+        console.error("Component load failed:", file, err);
     }
-    const mainImage = document.getElementById("main-image");
-    mainImage.src = event.target.src;
+}
+document.addEventListener("DOMContentLoaded", () => {
+    loadComponent("navbar", basePath + "navbar.html");
+    loadComponent("footer", basePath + "footer.html");
 });

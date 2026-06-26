@@ -29,21 +29,7 @@
     <!-- ===========================
          NAVIGATION
     ============================ -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <h2 class="logo">
-                CarBiz Motors
-            </h2>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Vehicles</a></li>
-                <li><a href="#">Sell Your Car</a></li>
-                <li><a href="#">Logbook Loans</a></li>
-                <li><a href="#">Car Hire</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="navbar"></div>
     <!-- ===========================
          HERO
     ============================ -->
@@ -59,11 +45,11 @@
                     and reliable car hire solutions.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#"
-                       class="btn btn-primary">
-                        Browse Vehicles
-                    </a>
-                    <a href="#"
+                    <a href="pages/vehicles.html"
+   class="btn btn-primary">
+    Browse Vehicles
+</a>
+                    <a href="pages/contact.html"
                        class="btn btn-secondary">
                         Contact Us
                     </a>
@@ -133,103 +119,31 @@
         </div>
     </section>
     <!-- ===========================
-         FEATURED VEHICLES
-    ============================ -->
-    <section class="featured-vehicles">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    Featured Vehicles
-                </h2>
-                <p class="section-subtitle">
-                    Explore some of our latest vehicles.
-                </p>
-            </div>
-            <div class="vehicle-grid">
-                <div class="vehicle-card content-card">
-                    <img src="images/hero-car.webp"
-                         alt="Toyota Prado">
-                    <div class="card-body">
-                        <h3>
-                            Toyota Prado Kakadu
-                        </h3>
-                        <div class="badge-group">
-
-    <span class="badge">2025</span>
-
-    <span class="badge">Automatic</span>
-
-    <span class="badge">Diesel</span>
-
-    <span class="badge">1,000 km</span>
-
-</div>
-                        <h4>
-                            KES 19,500,000
-                        </h4>
-                        <a href="#"
-                           class="btn btn-primary">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-                <div class="vehicle-card content-card">
-                    <img src="images/harrier.webp"
-                         alt="Toyota Harrier">
-                    <div class="card-body">
-                        <h3>
-                            Toyota Harrier
-                        </h3>
-                        <div class="badge-group">
-
-    <span class="badge">2025</span>
-
-    <span class="badge">Automatic</span>
-
-    <span class="badge">Diesel</span>
-
-    <span class="badge">15,000 km</span>
-
-</div>
-                        <h4>
-                            KES 8,200,000
-                        </h4>
-                        <a href="#"
-                           class="btn btn-primary">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-                <div class="vehicle-card content-card">
-                    <img src="images/mazda.webp"
-                         alt="Mazda CX-50">
-                    <div class="card-body">
-                        <h3>
-                            Mazda CX-50
-                        </h3>
-                        <div class="badge-group">
-
-    <span class="badge">2025</span>
-
-    <span class="badge">Automatic</span>
-
-    <span class="badge">Diesel</span>
-
-    <span class="badge">35,000 km</span>
-
-</div>
-                        <h4>
-                            KES 5,800,000
-                        </h4>
-                        <a href="#"
-                           class="btn btn-primary">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-            </div>
+     FEATURED VEHICLES
+=========================== -->
+<section class="featured-vehicles">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">
+                Featured Vehicles
+            </h2>
+            <p class="section-subtitle">
+                Explore some of our latest arrivals.
+            </p>
         </div>
-    </section>
+        <div
+            id="featured-vehicles"
+            class="vehicle-grid">
+        </div>
+        <div class="section-center">
+            <a
+                href="pages/vehicles.html"
+                class="btn btn-primary">
+                View All Vehicles
+            </a>
+        </div>
+    </div>
+</section>
     <!-- ===========================
          WHY CHOOSE US
     ============================ -->
@@ -302,18 +216,14 @@
     <!-- ===========================
          FOOTER
     ============================ -->
-    <footer class="footer">
-        <div class="container">
-            <h3>
-                CarBiz Motors
-            </h3>
-            <p>
-                Buy • Sell • Finance • Hire
-            </p>
-            <p>
-                © 2026 CarBiz Motors. All rights reserved.
-            </p>
-        </div>
-    </footer>
+    <!-- ===========================
+     FOOTER
+=========================== -->
+<div id="footer"></div>
+    <script src="js/data/vehicles.js"></script>
+<script src="js/components/vehicleCard.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/main.js"></script>
+<script src="js/components/components.js"></script>
 </body>
 </html>

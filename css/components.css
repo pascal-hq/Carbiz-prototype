@@ -237,6 +237,13 @@
 ========================================== */
 .vehicle-card{
     overflow:hidden;
+    transition:.3s ease;
+}
+.vehicle-card:hover{
+    transform:translateY(-6px);
+}
+.vehicle-image-wrapper{
+    position:relative;
 }
 .vehicle-image{
     width:100%;
@@ -244,8 +251,24 @@
     object-fit:cover;
     display:block;
 }
-.vehicle-card h4{
-    margin:20px 0;
+.featured-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:var(--primary);
+    color:#fff;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:.75rem;
+    font-weight:600;
+}
+.vehicle-specs{
+    margin:18px 0;
+    color:var(--text-light);
+    line-height:1.7;
+}
+.vehicle-price{
+    margin-bottom:20px;
     color:var(--primary);
-    font-size:1.3rem;
+    font-size:1.35rem;
 }
