@@ -1,0 +1,37 @@
+@media (max-width: 992px) {
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-links {
+        display: none;
+    }
+    .services-grid{
+    grid-template-columns:1fr;
+}
+.vehicle-grid{
+    grid-template-columns:1fr;
+}
+.why-grid{
+    grid-template-columns:1fr;
+}
+.vehicle-filters{
+    grid-template-columns:1fr;
+}
+}
